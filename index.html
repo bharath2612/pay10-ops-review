@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pay10 · Operations Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#fafaf8;
+    --panel:#ffffff;
+    --ink:#16140f;
+    --ink-soft:#54504a;
+    --ink-faint:#8a857d;
+    --line:#e7e4dd;
+    --line-strong:#d8d4cb;
+    --red:#ed1c24;
+    --amber:#f9b219;
+    --accent-wash:#fdf4ee;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+    font-size:16px;
+  }
+  ::selection{background:var(--amber);color:#16140f}
+  a{color:inherit}
+
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+
+  /* ---- top bar ---- */
+  header.bar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(250,250,248,.82);
+    backdrop-filter:saturate(160%) blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:26px;width:auto;display:block}
+  .brand .sep{width:1px;height:20px;background:var(--line-strong)}
+  .brand .tag{font-size:13px;color:var(--ink-soft);font-weight:500;letter-spacing:.01em}
+  .bar-meta{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--ink-faint);letter-spacing:.02em}
+
+  /* ---- hero ---- */
+  .hero{padding:88px 0 56px;border-bottom:1px solid var(--line)}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-faint);margin-bottom:26px;
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--red)}
+  .hero h1{
+    font-family:'Newsreader',serif;font-weight:400;
+    font-size:clamp(40px,6vw,68px);line-height:1.04;letter-spacing:-.02em;
+    max-width:16ch;
+  }
+  .hero h1 em{font-style:italic;color:var(--red)}
+  .hero .lede{
+    margin-top:26px;max-width:60ch;font-size:18px;color:var(--ink-soft);
+  }
+  .hero .lede b{color:var(--ink);font-weight:600}
+
+  /* ---- engagement strip ---- */
+  .strip{
+    margin-top:44px;display:grid;grid-template-columns:repeat(4,1fr);
+    border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--panel);
+  }
+  .strip .cell{padding:20px 22px;border-right:1px solid var(--line)}
+  .strip .cell:last-child{border-right:none}
+  .strip .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
+  .strip .v{margin-top:8px;font-size:15px;font-weight:600;color:var(--ink);line-height:1.35}
+  .strip .v span{display:block;font-weight:400;color:var(--ink-soft);font-size:13px;margin-top:2px}
+
+  /* ---- section intro ---- */
+  .section-head{padding:72px 0 8px}
+  .section-head .label{
+    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--ink-faint)
+  }
+  .section-head h2{
+    font-family:'Newsreader',serif;font-weight:400;font-size:32px;letter-spacing:-.01em;margin-top:10px
+  }
+
+  /* ---- findings ---- */
+  .findings{padding:24px 0 40px;display:flex;flex-direction:column;gap:22px}
+  .finding{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:0;
+    overflow:hidden;
+    transition:border-color .2s ease;
+  }
+  .finding:hover{border-color:var(--line-strong)}
+  .finding-grid{display:grid;grid-template-columns:96px 1fr}
+  .f-num{
+    border-right:1px solid var(--line);
+    padding:34px 0 0;
+    text-align:center;
+    background:linear-gradient(180deg,var(--accent-wash),transparent 55%);
+  }
+  .f-num .n{font-family:'Newsreader',serif;font-size:40px;color:var(--red);line-height:1}
+  .f-num .of{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-faint);margin-top:8px}
+  .f-body{padding:32px 38px 34px}
+
+  .f-kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-faint);margin-bottom:14px
+  }
+  .f-kicker .pill{
+    padding:3px 9px;border-radius:999px;border:1px solid var(--line-strong);
+    color:var(--ink-soft);background:var(--bg)
+  }
+  .f-kicker .pill.risk{border-color:#f3c9c9;color:#b91c1c;background:#fdf1f1}
+
+  .f-body h3{
+    font-family:'Newsreader',serif;font-weight:400;font-size:25px;letter-spacing:-.01em;line-height:1.2;
+  }
+  .f-current{margin-top:14px;color:var(--ink-soft);max-width:68ch}
+  .f-current b{color:var(--ink);font-weight:600}
+
+  .reco{
+    margin-top:24px;
+    border-top:1px solid var(--line);
+    padding-top:22px;
+  }
+  .reco .reco-label{
+    display:flex;align-items:center;gap:10px;
+    font-size:13px;font-weight:600;color:var(--ink);margin-bottom:14px;
+  }
+  .reco .reco-label .arrow{color:var(--red);font-family:'JetBrains Mono',monospace}
+  .reco ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+  .reco li{position:relative;padding-left:24px;color:var(--ink-soft);max-width:70ch;font-size:15.5px}
+  .reco li::before{
+    content:"";position:absolute;left:2px;top:9px;
+    width:7px;height:7px;border-radius:2px;background:var(--amber);
+  }
+  .reco li b{color:var(--ink);font-weight:600}
+
+  /* evidence (finding 4) */
+  .evidence{
+    margin-top:24px;border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    display:grid;grid-template-columns:1.1fr 1fr;background:var(--bg)
+  }
+  .evidence .cap{padding:22px 24px}
+  .evidence .cap .tagline{
+    font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+    color:#b91c1c;margin-bottom:12px;display:flex;align-items:center;gap:8px
+  }
+  .evidence .cap .tagline::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--red)}
+  .evidence .cap p{color:var(--ink-soft);font-size:14.5px}
+  .evidence .cap p b{color:var(--ink)}
+  .evidence .shot{border-left:1px solid var(--line);background:#fff;display:flex;align-items:flex-start;justify-content:center;max-height:360px;overflow:hidden}
+  .evidence .shot img{width:100%;height:auto;display:block}
+
+  /* ---- closing ---- */
+  .closing{padding:64px 0 96px;border-top:1px solid var(--line);margin-top:48px}
+  .closing .grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .closing h2{font-family:'Newsreader',serif;font-weight:400;font-size:30px;letter-spacing:-.01em;line-height:1.15;max-width:18ch}
+  .closing p{color:var(--ink-soft);margin-top:16px;max-width:46ch}
+  .takeaways{display:flex;flex-direction:column;gap:0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+  .takeaways .row{display:flex;gap:14px;padding:16px 20px;border-bottom:1px solid var(--line);align-items:baseline}
+  .takeaways .row:last-child{border-bottom:none}
+  .takeaways .row .i{font-family:'JetBrains Mono',monospace;color:var(--red);font-size:13px;min-width:26px}
+  .takeaways .row .t{font-size:14.5px;color:var(--ink)}
+  .takeaways .row .t span{color:var(--ink-faint);display:block;font-size:13px;margin-top:2px}
+
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--ink-faint);font-size:13px}
+  footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+  footer .mono{font-family:'JetBrains Mono',monospace;letter-spacing:.02em}
+
+  @media(max-width:860px){
+    .wrap{padding:0 22px}
+    .strip{grid-template-columns:1fr 1fr}
+    .strip .cell:nth-child(2){border-right:none}
+    .finding-grid{grid-template-columns:1fr}
+    .f-num{display:flex;align-items:center;gap:12px;border-right:none;border-bottom:1px solid var(--line);padding:18px 24px;justify-content:flex-start;background:linear-gradient(90deg,var(--accent-wash),transparent 60%)}
+    .f-num .n{font-size:30px}
+    .f-num .of{margin-top:0}
+    .f-body{padding:26px 24px 30px}
+    .evidence{grid-template-columns:1fr}
+    .evidence .shot{border-left:none;border-top:1px solid var(--line);max-height:none}
+    .closing .grid{grid-template-columns:1fr;gap:28px}
+  }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <div class="brand">
+      <img src="assets/pay10-logo.png" alt="Pay10" />
+      <span class="sep"></span>
+      <span class="tag">Operations Review</span>
+    </div>
+    <div class="bar-meta">CONFIDENTIAL · 2026</div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow"><span class="dot"></span> Core Operations · Findings &amp; Recommendations</div>
+      <h1>Five gaps holding back <em>core operations</em> — and how to close them.</h1>
+      <p class="lede">
+        Pay10's core operations runs on <b>6 operations specialists</b> reporting up to Vishal and Ravi,
+        and onward to Mohit. We sat with <b>Vishal, Pooja and Shubham</b> to map the day-to-day.
+        The team spends its day on three repeating tasks — and our review surfaced
+        <b>five structural gaps</b>, each with a clear, low-friction fix.
+      </p>
+
+      <div class="strip">
+        <div class="cell">
+          <div class="k">Reporting line</div>
+          <div class="v">6 Ops Specialists<span>→ Vishal &amp; Ravi → Mohit</span></div>
+        </div>
+        <div class="cell">
+          <div class="k">Interviewed</div>
+          <div class="v">Vishal · Pooja · Shubham<span>Hands-on operators</span></div>
+        </div>
+        <div class="cell">
+          <div class="k">Daily workload</div>
+          <div class="v">3 repeating tasks<span>Monitor · Report · Resolve</span></div>
+        </div>
+        <div class="cell">
+          <div class="k">Findings</div>
+          <div class="v">5 gaps identified<span>Each with a recommendation</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION HEAD -->
+  <div class="wrap section-head">
+    <div class="label">The Findings</div>
+    <h2>What's happening today, and what we recommend instead.</h2>
+  </div>
+
+  <!-- FINDINGS -->
+  <section class="findings">
+    <div class="wrap">
+      <div style="display:flex;flex-direction:column;gap:22px">
+
+        <!-- 1 -->
+        <article class="finding">
+          <div class="finding-grid">
+            <div class="f-num"><div class="n">01</div><div class="of">/ 05</div></div>
+            <div class="f-body">
+              <div class="f-kicker"><span class="pill">Daily task · Monitoring</span><span class="pill risk">Manual · 24×7</span></div>
+              <h3>The dashboard is watched by eye, around the clock.</h3>
+              <p class="f-current">
+                Specialists monitor the transaction dashboard <b>24×7 with the naked eye</b>, manually
+                refreshing the browser to catch a dip. Detection depends entirely on someone looking at
+                the right moment — slow, fatiguing, and easy to miss during off-hours.
+              </p>
+              <div class="reco">
+                <div class="reco-label"><span class="arrow">→</span> Recommendation — Automated SR alerting</div>
+                <ul>
+                  <li>Set <b>threshold-based alerts on Success Rate (SR)</b>: the moment SR drops below a defined floor, the system fires automatically — no human polling required.</li>
+                  <li>Route alerts to the right people instantly — <b>Operations, the Tech team, and merchant SPOCs</b> — so the right owner is engaged within seconds, not after a manual catch.</li>
+                  <li>Free the team from staring at a screen; let them act on signals instead of hunting for them.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="finding">
+          <div class="finding-grid">
+            <div class="f-num"><div class="n">02</div><div class="of">/ 05</div></div>
+            <div class="f-body">
+              <div class="f-kicker"><span class="pill">Daily task · Reporting</span><span class="pill">Hourly · Manual</span></div>
+              <h3>Hourly reports are generated and pasted by hand.</h3>
+              <p class="f-current">
+                Every hour, specialists manually generate a report, post it to the <b>WhatsApp group</b>,
+                and share it with merchants on request. For internal tracking these reports are
+                <b>largely redundant</b> — repetitive effort that produces no new decision.
+              </p>
+              <div class="reco">
+                <div class="reco-label"><span class="arrow">→</span> Recommendation — On-demand &amp; scheduled report automation</div>
+                <ul>
+                  <li>Make internal reports <b>request-driven from an internal chat</b> — an automation tool fetches the numbers and returns them over WhatsApp or any chosen channel, on demand.</li>
+                  <li>For merchants who need hourly reports, set a <b>fixed automated schedule</b> that delivers to them directly — no operator in the loop.</li>
+                  <li>Eliminate the redundant manual cadence and reclaim operator hours for higher-value work.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="finding">
+          <div class="finding-grid">
+            <div class="f-num"><div class="n">03</div><div class="of">/ 05</div></div>
+            <div class="f-body">
+              <div class="f-kicker"><span class="pill">Daily task · Merchant support</span><span class="pill risk">Untracked</span></div>
+              <h3>Merchant queries are solved — but never tracked.</h3>
+              <p class="f-current">
+                Queries get resolved, yet nothing is recorded. We have <b>no visibility into the common
+                issues</b> merchants face, no way to spot when a <b>systemic fix</b> would cut volume at the
+                source, and no accountability on how fast we respond or resolve.
+              </p>
+              <div class="reco">
+                <div class="reco-label"><span class="arrow">→</span> Recommendation — A proper ITSM practice</div>
+                <ul>
+                  <li>Stand up <b>full ITSM</b>: Service Requests, Incident Management, Change Management, and Problem Management — so recurring pain points roll up into systemic fixes.</li>
+                  <li>Define <b>SLAs for response and resolution time</b> per issue and issue type, with structured ticket management end-to-end.</li>
+                  <li>Mandate that <b>KAMs log every merchant query — however small — into the system</b>, turning scattered conversations into trend data and root-cause signals.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="finding">
+          <div class="finding-grid">
+            <div class="f-num"><div class="n">04</div><div class="of">/ 05</div></div>
+            <div class="f-body">
+              <div class="f-kicker"><span class="pill">Reputation · External</span><span class="pill risk">Blind spot</span></div>
+              <h3>Public complaints surface on social media — unseen.</h3>
+              <p class="f-current">
+                Operations has <b>no visibility into who is raising a ticket or complaining about Pay10 on
+                social platforms</b>. These posts are public, they spread, and left unaddressed they
+                <b>materially damage Pay10's reputation</b> — especially when our brand is named directly.
+              </p>
+
+              <div class="evidence">
+                <div class="cap">
+                  <div class="tagline">Live example · X (Twitter)</div>
+                  <p>A user publicly tags a government handle over an <b>18-day pending refund</b> paid
+                  through <b>"gateway pay10"</b>. This is exactly the kind of mention that today reaches
+                  no one on the operations side — and shapes public perception unchallenged.</p>
+                </div>
+                <div class="shot">
+                  <img src="assets/social-complaint.png" alt="Public X post complaining about a pending refund through Pay10" />
+                </div>
+              </div>
+
+              <div class="reco">
+                <div class="reco-label"><span class="arrow">→</span> Recommendation — Social listening &amp; response</div>
+                <ul>
+                  <li>Deploy <b>social media monitoring</b> for mentions of the Pay10 platform across channels — surfacing complaints the moment they appear.</li>
+                  <li>Route flagged mentions into the same <b>ITSM ticketing flow</b> so each public issue is owned, tracked, and resolved — not just noticed.</li>
+                  <li>Respond publicly and promptly to protect brand reputation and demonstrate accountability.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="finding">
+          <div class="finding-grid">
+            <div class="f-num"><div class="n">05</div><div class="of">/ 05</div></div>
+            <div class="f-body">
+              <div class="f-kicker"><span class="pill">Security · Internal</span><span class="pill risk">Data exposure</span></div>
+              <h3>Personal WhatsApp is the enterprise comms channel.</h3>
+              <p class="f-current">
+                Operations runs on <b>personal WhatsApp numbers</b> — not acceptable for an enterprise
+                serving some of the country's largest businesses. Sensitive files move through personal,
+                unmanaged accounts with no control over where they end up.
+              </p>
+              <div class="reco">
+                <div class="reco-label"><span class="arrow">→</span> Recommendation — Secure, governed communication</div>
+                <ul>
+                  <li>Move all internal communication to a <b>single, secure, company-controlled platform</b> — no personal numbers in the workflow.</li>
+                  <li>Enforce <b>data-loss controls</b>: no file leaves the system, and any external share requires explicit approval.</li>
+                  <li>Lock down endpoints — <b>block social media on office laptops</b> to close avoidable security and data-leak vectors.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <div class="wrap grid">
+      <div>
+        <h2>From reactive watching to a measured, accountable operation.</h2>
+        <p>
+          Four of these five gaps are solved by the same shift: replace manual, untracked effort with
+          automation and a system of record. The fifth — secure communication — is the foundation the
+          rest sits on. Together they cut operator load, protect the brand, and give leadership real
+          numbers to manage by.
+        </p>
+      </div>
+      <div class="takeaways">
+        <div class="row"><span class="i">01</span><span class="t">Automated SR alerting<span>Stop watching, start getting alerted</span></span></div>
+        <div class="row"><span class="i">02</span><span class="t">Report automation<span>On-demand internally, scheduled for merchants</span></span></div>
+        <div class="row"><span class="i">03</span><span class="t">ITSM with SLAs<span>Track every query, fix root causes</span></span></div>
+        <div class="row"><span class="i">04</span><span class="t">Social listening<span>See and answer public complaints</span></span></div>
+        <div class="row"><span class="i">05</span><span class="t">Secure comms platform<span>No personal WhatsApp, no data leaks</span></span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Pay10 · Core Operations Review</span>
+    <span class="mono">Prepared for executive review · 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>

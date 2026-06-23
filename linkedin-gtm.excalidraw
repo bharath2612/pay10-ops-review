@@ -1,0 +1,470 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 60, "y": 30, "width": 1000, "height": 40,
+      "text": "Targeting Enterprise & SMEs on LinkedIn",
+      "originalText": "Targeting Enterprise & SMEs on LinkedIn",
+      "fontSize": 32, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100001, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "x": 62, "y": 78, "width": 900, "height": 22,
+      "text": "A dual-track go-to-market playbook — same channel, two very different motions",
+      "originalText": "A dual-track go-to-market playbook — same channel, two very different motions",
+      "fontSize": 17, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#64748b", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100002, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text",
+      "id": "ent_label",
+      "x": 440, "y": 150, "width": 400, "height": 26,
+      "text": "ENTERPRISE TRACK  ·  high-touch ABM",
+      "originalText": "ENTERPRISE TRACK  ·  high-touch ABM",
+      "fontSize": 19, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100003, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text",
+      "id": "sme_label",
+      "x": 440, "y": 470, "width": 400, "height": 26,
+      "text": "SME TRACK  ·  scaled, low-touch",
+      "originalText": "SME TRACK  ·  scaled, low-touch",
+      "fontSize": 19, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#3b82f6", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100004, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "line",
+      "id": "lane_divider",
+      "x": 420, "y": 445, "width": 1260, "height": 0,
+      "strokeColor": "#cbd5e1", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100005, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [1260, 0]]
+    },
+    {
+      "type": "rectangle",
+      "id": "foundation_box",
+      "x": 60, "y": 200, "width": 300, "height": 460,
+      "strokeColor": "#c2410c", "backgroundColor": "#fed7aa", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100006, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "foundation_text", "type": "text"}], "link": null, "locked": false,
+      "roundness": {"type": 3}
+    },
+    {
+      "type": "text",
+      "id": "foundation_text",
+      "x": 80, "y": 280, "width": 260, "height": 300,
+      "text": "FOUNDATION\n(shared base)\n\n• Optimize Company Page\n   + founder/exec profiles\n• Sharp value prop & ICP\n• Content engine 3–5x/wk\n   (founder-led authority)\n• Warm the audience\n   before you sell",
+      "originalText": "FOUNDATION\n(shared base)\n\n• Optimize Company Page\n   + founder/exec profiles\n• Sharp value prop & ICP\n• Content engine 3–5x/wk\n   (founder-led authority)\n• Warm the audience\n   before you sell",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100007, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "foundation_box", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle",
+      "id": "converge_box",
+      "x": 1760, "y": 200, "width": 300, "height": 460,
+      "strokeColor": "#047857", "backgroundColor": "#a7f3d0", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100008, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "converge_text", "type": "text"}], "link": null, "locked": false,
+      "roundness": {"type": 3}
+    },
+    {
+      "type": "text",
+      "id": "converge_text",
+      "x": 1780, "y": 280, "width": 260, "height": 300,
+      "text": "CONVERT &\nEXPAND\n\n• Route leads → CRM\n• Score + segment\n• Book → demo → close\n• Onboard fast\n• Land & expand\n   (referrals, NRR)",
+      "originalText": "CONVERT &\nEXPAND\n\n• Route leads → CRM\n• Score + segment\n• Book → demo → close\n• Onboard fast\n• Land & expand\n   (referrals, NRR)",
+      "fontSize": 16, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#065f46", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 100009, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "converge_box", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "e1", "x": 440, "y": 185, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200001, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "e1t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "e1t", "x": 455, "y": 205, "width": 230, "height": 110,
+      "text": "1 · DEFINE ICP\n500+ employees\nNamed target accounts\nBuying committee 6–10",
+      "originalText": "1 · DEFINE ICP\n500+ employees\nNamed target accounts\nBuying committee 6–10",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200002, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "e1", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "e2", "x": 760, "y": 185, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200003, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "e2t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "e2t", "x": 775, "y": 205, "width": 230, "height": 110,
+      "text": "2 · ABM TARGETING\nSales Navigator account lists\nMap org chart + stakeholders\nIntent & job-change signals",
+      "originalText": "2 · ABM TARGETING\nSales Navigator account lists\nMap org chart + stakeholders\nIntent & job-change signals",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200004, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "e2", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "e3", "x": 1080, "y": 185, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200005, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "e3t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "e3t", "x": 1095, "y": 205, "width": 230, "height": 110,
+      "text": "3 · MULTI-THREAD\nExec-to-exec warm intros\nResearch-led, personalized\nWebinars · whitepapers",
+      "originalText": "3 · MULTI-THREAD\nExec-to-exec warm intros\nResearch-led, personalized\nWebinars · whitepapers",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200006, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "e3", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "e4", "x": 1400, "y": 185, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#3b82f6", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200007, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "e4t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "e4t", "x": 1415, "y": 205, "width": 230, "height": 110,
+      "text": "4 · NURTURE 3–9 mo\nABM LinkedIn ads to list\nROI decks · case studies\nPilot / POC proposal",
+      "originalText": "4 · NURTURE 3–9 mo\nABM LinkedIn ads to list\nROI decks · case studies\nPilot / POC proposal",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#ffffff", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 200008, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "e4", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s1", "x": 440, "y": 505, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300001, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "s1t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s1t", "x": 455, "y": 525, "width": 230, "height": 110,
+      "text": "1 · DEFINE ICP\n10–200 employees\nOwner / founder-led\n1–2 decision makers",
+      "originalText": "1 · DEFINE ICP\n10–200 employees\nOwner / founder-led\n1–2 decision makers",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300002, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "s1", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s2", "x": 760, "y": 505, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300003, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "s2t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s2t", "x": 775, "y": 525, "width": 230, "height": 110,
+      "text": "2 · VOLUME TARGETING\nSales Nav lead lists\nFilter: geo + industry + title\nBuild lookalike segments",
+      "originalText": "2 · VOLUME TARGETING\nSales Nav lead lists\nFilter: geo + industry + title\nBuild lookalike segments",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300004, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "s2", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s3", "x": 1080, "y": 505, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300005, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "s3t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s3t", "x": 1095, "y": 525, "width": 230, "height": 110,
+      "text": "3 · SCALED OUTREACH\nConnect + value-first DM\nLead magnet / free audit\n3–4 touch sequence",
+      "originalText": "3 · SCALED OUTREACH\nConnect + value-first DM\nLead magnet / free audit\n3–4 touch sequence",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300006, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "s3", "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "s4", "x": 1400, "y": 505, "width": 260, "height": 150,
+      "strokeColor": "#1e3a5f", "backgroundColor": "#93c5fd", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300007, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "s4t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "s4t", "x": 1415, "y": 525, "width": 230, "height": 110,
+      "text": "4 · NURTURE 1–4 wk\nRetargeting ads\nCase studies · social proof\nBook demo → close",
+      "originalText": "4 · NURTURE 1–4 wk\nRetargeting ads\nCase studies · social proof\nBook demo → close",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#374151", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 300008, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "s4", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "a_f_e1", "x": 360, "y": 370, "width": 80, "height": 110,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400001, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [80, -110]],
+      "startBinding": {"elementId": "foundation_box", "focus": 0.4, "gap": 4},
+      "endBinding": {"elementId": "e1", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_f_s1", "x": 360, "y": 490, "width": 80, "height": 110,
+      "strokeColor": "#c2410c", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400002, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [80, 90]],
+      "startBinding": {"elementId": "foundation_box", "focus": -0.4, "gap": 4},
+      "endBinding": {"elementId": "s1", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_e1_e2", "x": 700, "y": 260, "width": 60, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400003, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [60, 0]],
+      "startBinding": {"elementId": "e1", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "e2", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_e2_e3", "x": 1020, "y": 260, "width": 60, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400004, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [60, 0]],
+      "startBinding": {"elementId": "e2", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "e3", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_e3_e4", "x": 1340, "y": 260, "width": 60, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400005, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [60, 0]],
+      "startBinding": {"elementId": "e3", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "e4", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_s1_s2", "x": 700, "y": 580, "width": 60, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400006, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [60, 0]],
+      "startBinding": {"elementId": "s1", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "s2", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_s2_s3", "x": 1020, "y": 580, "width": 60, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400007, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [60, 0]],
+      "startBinding": {"elementId": "s2", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "s3", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_s3_s4", "x": 1340, "y": 580, "width": 60, "height": 0,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400008, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [60, 0]],
+      "startBinding": {"elementId": "s3", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "s4", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_e4_c", "x": 1660, "y": 280, "width": 100, "height": 120,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400009, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, 120]],
+      "startBinding": {"elementId": "e4", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "converge_box", "focus": 0.3, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_s4_c", "x": 1660, "y": 560, "width": 100, "height": 120,
+      "strokeColor": "#1e3a5f", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 400010, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [100, -120]],
+      "startBinding": {"elementId": "s4", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "converge_box", "focus": -0.3, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "rectangle", "id": "measure_box", "x": 440, "y": 760, "width": 1220, "height": 90,
+      "strokeColor": "#b45309", "backgroundColor": "#fef3c7", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500001, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "measure_text", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "measure_text", "x": 460, "y": 778, "width": 1180, "height": 54,
+      "text": "MEASURE & OPTIMIZE  ·  feed every result back into the funnel\nConnect % · reply % · SQLs · pipeline · CAC · win-rate   |   A/B test hooks, creative & targeting every week",
+      "originalText": "MEASURE & OPTIMIZE  ·  feed every result back into the funnel\nConnect % · reply % · SQLs · pipeline · CAC · win-rate   |   A/B test hooks, creative & targeting every week",
+      "fontSize": 15, "fontFamily": 3, "textAlign": "center", "verticalAlign": "middle",
+      "strokeColor": "#7c2d12", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500002, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "measure_box", "lineHeight": 1.25
+    },
+    {
+      "type": "arrow", "id": "a_c_m", "x": 1910, "y": 660, "width": 250, "height": 145,
+      "strokeColor": "#b45309", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500003, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [0, 145], [-250, 145]],
+      "startBinding": {"elementId": "converge_box", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "measure_box", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "arrow", "id": "a_m_f", "x": 440, "y": 805, "width": 230, "height": 125,
+      "strokeColor": "#b45309", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500004, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false,
+      "points": [[0, 0], [-230, 0], [-230, -125]],
+      "startBinding": {"elementId": "measure_box", "focus": 0, "gap": 4},
+      "endBinding": {"elementId": "foundation_box", "focus": 0, "gap": 4},
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "type": "text", "id": "loop_label", "x": 150, "y": 715, "width": 240, "height": 20,
+      "text": "learn → refine → repeat",
+      "originalText": "learn → refine → repeat",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#b45309", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500005, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "text", "id": "artifacts_header", "x": 140, "y": 895, "width": 700, "height": 24,
+      "text": "PLAYBOOK ARTIFACTS — what to actually use",
+      "originalText": "PLAYBOOK ARTIFACTS — what to actually use",
+      "fontSize": 18, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#1e40af", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500006, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": null, "lineHeight": 1.25
+    },
+    {
+      "type": "rectangle", "id": "art1", "x": 140, "y": 935, "width": 520, "height": 250,
+      "strokeColor": "#1e293b", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500007, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "art1t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "art1t", "x": 162, "y": 955, "width": 480, "height": 210,
+      "text": "Sales Navigator — SME filter\n\nGeography:  UAE · KSA · India\nIndustry:   Real Estate, Construction\nHeadcount:  11–200\nTitle:      \"Founder\" OR \"CEO\"\n            OR \"Head of Operations\"\nSeniority:  Owner, CXO\nSignal:     posted / changed job <90d",
+      "originalText": "Sales Navigator — SME filter\n\nGeography:  UAE · KSA · India\nIndustry:   Real Estate, Construction\nHeadcount:  11–200\nTitle:      \"Founder\" OR \"CEO\"\n            OR \"Head of Operations\"\nSeniority:  Owner, CXO\nSignal:     posted / changed job <90d",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#22c55e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500008, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "art1", "lineHeight": 1.4
+    },
+    {
+      "type": "rectangle", "id": "art2", "x": 720, "y": 935, "width": 470, "height": 250,
+      "strokeColor": "#1e293b", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500009, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "art2t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "art2t", "x": 742, "y": 955, "width": 430, "height": 210,
+      "text": "Outreach message — value-first\n\nHi {first_name} — saw {company}\nis scaling {trigger}. We help\n{ICP} cut {metric} by ~30%.\n\nWorth a 15-min idea swap?\nNo pitch. — {your_name}",
+      "originalText": "Outreach message — value-first\n\nHi {first_name} — saw {company}\nis scaling {trigger}. We help\n{ICP} cut {metric} by ~30%.\n\nWorth a 15-min idea swap?\nNo pitch. — {your_name}",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#e2e8f0", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500010, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "art2", "lineHeight": 1.4
+    },
+    {
+      "type": "rectangle", "id": "art3", "x": 1250, "y": 935, "width": 470, "height": 250,
+      "strokeColor": "#1e293b", "backgroundColor": "#1e293b", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500011, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": [{"id": "art3t", "type": "text"}], "link": null, "locked": false, "roundness": {"type": 3}
+    },
+    {
+      "type": "text", "id": "art3t", "x": 1272, "y": 955, "width": 430, "height": 210,
+      "text": "Benchmarks to watch\n\nConnect accept:   30–40%\nReply rate:       10–15%\nMeeting booked:   3–5%\nSME sales cycle:  < 30 days\nEnterprise cycle: 90–270 days\nTrack: CAC · win-rate · NRR",
+      "originalText": "Benchmarks to watch\n\nConnect accept:   30–40%\nReply rate:       10–15%\nMeeting booked:   3–5%\nSME sales cycle:  < 30 days\nEnterprise cycle: 90–270 days\nTrack: CAC · win-rate · NRR",
+      "fontSize": 14, "fontFamily": 3, "textAlign": "left", "verticalAlign": "top",
+      "strokeColor": "#22c55e", "backgroundColor": "transparent", "fillStyle": "solid",
+      "strokeWidth": 1, "strokeStyle": "solid", "roughness": 0, "opacity": 100, "angle": 0,
+      "seed": 500012, "version": 1, "versionNonce": 1, "isDeleted": false, "groupIds": [],
+      "boundElements": null, "link": null, "locked": false, "containerId": "art3", "lineHeight": 1.4
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": 20
+  },
+  "files": {}
+}
