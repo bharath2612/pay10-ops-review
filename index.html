@@ -80,6 +80,48 @@
   .strip .v{margin-top:8px;font-size:15px;font-weight:600;color:var(--ink);line-height:1.35}
   .strip .v span{display:block;font-weight:400;color:var(--ink-soft);font-size:13px;margin-top:2px}
 
+  /* ---- collect band ---- */
+  .collect{padding:96px 0;border-bottom:1px solid var(--line)}
+  .collect-inner{max-width:660px;margin:0 auto;text-align:center;display:flex;flex-direction:column;align-items:center}
+  .collect .tick{
+    font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-faint);margin-bottom:22px
+  }
+  .collect-h{
+    font-family:'Newsreader',serif;font-weight:400;font-size:clamp(32px,4.4vw,46px);
+    letter-spacing:-.02em;line-height:1.06
+  }
+  .collect-h em{font-style:italic;color:var(--red)}
+  .collect-cap{
+    margin-top:20px;font-size:18px;color:var(--ink-soft);max-width:46ch;line-height:1.55
+  }
+  .collect-cap b{color:var(--ink);font-weight:600}
+  .linkbox{
+    margin-top:38px;width:100%;max-width:520px;
+    display:flex;align-items:center;gap:8px;
+    background:var(--panel);border:1px solid var(--line-strong);
+    border-radius:14px;padding:7px 7px 7px 18px;
+    transition:border-color .2s ease;
+  }
+  .linkbox:focus-within{border-color:var(--ink)}
+  .linkbox .glyph{color:var(--ink-faint);font-family:'JetBrains Mono',monospace;font-size:15px;flex:none}
+  .linkbox input{
+    flex:1;border:none;outline:none;background:transparent;
+    font-family:'Inter',sans-serif;font-size:15.5px;color:var(--ink);padding:10px 4px;min-width:0
+  }
+  .linkbox input::placeholder{color:var(--ink-faint)}
+  .linkbox button{
+    flex:none;border:none;cursor:pointer;
+    background:var(--ink);color:#fafaf8;
+    font-family:'Inter',sans-serif;font-weight:600;font-size:14.5px;
+    padding:11px 22px;border-radius:9px;transition:background .18s ease
+  }
+  .linkbox button:hover{background:#000}
+  .collect-note{
+    margin-top:16px;font-family:'JetBrains Mono',monospace;font-size:12px;
+    letter-spacing:.03em;color:var(--ink-faint)
+  }
+
   /* ---- section intro ---- */
   .section-head{padding:72px 0 8px}
   .section-head .label{
@@ -235,6 +277,26 @@
           <div class="k">Findings</div>
           <div class="v">5 gaps identified<span>Each with a recommendation</span></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECT BAND -->
+  <section class="collect">
+    <div class="wrap">
+      <div class="collect-inner">
+        <div class="tick">Your list</div>
+        <h2 class="collect-h">Start with a <em>link</em>.</h2>
+        <p class="collect-cap">
+          <b>Save everything you want.</b> Publish it, see what other people want,
+          and save it to your list.
+        </p>
+        <form class="linkbox" onsubmit="return false">
+          <span class="glyph" aria-hidden="true">↳</span>
+          <input type="url" inputmode="url" placeholder="Paste a product link" aria-label="Paste a product link" />
+          <button type="submit">Save</button>
+        </form>
+        <div class="collect-note">Paste anything · we'll keep it for you</div>
       </div>
     </div>
   </section>
